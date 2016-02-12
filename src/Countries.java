@@ -38,14 +38,15 @@ public class Countries {
             throw new Exception ("Please type only the first letter.");
         }
 
-        char firstLetter = letter.charAt(0);
+        char firstLetter = letter.charAt(0);// first Letter comes from the string letter the user typed in
         ArrayList<Country> subsetCountries = countryMap.get(firstLetter);
         System.out.println(subsetCountries);
         String fileName = firstLetter + "_Countries.txt";
         String fileContent = new String();
         for (Country c : subsetCountries) {
-
+           fileContent = fileContent + c.name + " " + c.abbreviation+ "\n";
         }
+        saveFile(fileName, fileContent);
     }
 
     static void saveFile(String fileName, String fileContent) throws IOException {
