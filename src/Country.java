@@ -10,4 +10,19 @@ public class Country {
         this.abbreviation = abbreviation;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getAbbreviation() {
+        return abbreviation;
+    }
+
+    @Override
+    public String toString() {
+        return "Country{" +
+                "name='" + name + '\'' +
+                ", abbreviation='" + abbreviation + '\'' +
+                '}';
+    }
 }
