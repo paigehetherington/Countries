@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+//Read and Write Files
+
 public class Countries {
 
     public static HashMap<Character, ArrayList<Country>> countryMap = new HashMap<>(); //created HM key = abbrev and AL of countries
